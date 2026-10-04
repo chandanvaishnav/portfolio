@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan Vishnav | MCA Student | Python | Data Analytics | Machine Learning</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Chandan Vishnav, an MCA student seeking entry-level opportunities in Software Development, Python, Data Analytics, and Machine Learning.">
+  <meta name="keywords" content="Chandan Vishnav, MCA, Python Developer, Data Analyst, Machine Learning, Pune, Software Development">
+  <meta name="author" content="Chandan Vishnav">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chandan Vishnav | MCA Student | Python | Data Analytics | Machine Learning">
+  <meta property="og:description" content="Portfolio of Chandan Vishnav, an MCA student seeking entry-level software, data analytics, and machine learning roles.">
+  <meta property="og:url" content="https://github.com/chandanvaishnav">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+    <div class="toast-icon">ℹ️</div>
+    <div class="toast-message" id="toast-message">Message text here</div>
+    <button class="toast-close" id="toast-close" aria-label="Close notification">&times;</button>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand" aria-label="Chandan Vishnav Home">
+        <span class="brand-text">Chandan Vishnav</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light and dark mode" title="Switch Theme">
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Direct Resume Download in Navbar -->
+        <a href="assets/resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" download="Chandan_Vishnav_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Chandan's Resume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="nav-toggle" class="btn-icon mobile-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero" class="hero-section section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Recruiter Availability Pill -->
+          <div class="recruiter-badge">
+            <span class="pulse-indicator"></span>
+            <span>Actively Seeking Entry-Level Opportunities &bull; Pune / Hybrid / Relocation</span>
+          </div>
+
+          <h1 class="hero-name">Chandan Vishnav</h1>
+          
+          <h2 class="hero-tagline">
+            MCA Student <span class="divider">|</span> Python <span class="divider">|</span> Data Analytics <span class="divider">|</span> Machine Learning
+          </h2>
+
+          <p class="hero-intro">
+            Building practical software and data-driven solutions using Python, SQL, analytics and machine learning.
+          </p>
+
+          <!-- Quick Recruiter Quick-Facts -->
+          <div class="quick-facts">
+            <div class="fact-item">
+              <span class="fact-label">Academics</span>
+              <span class="fact-value">MCA (Pursuing) &bull; BBACA (7.404 CGPA)</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Core Focus</span>
+              <span class="fact-value">Python, SQL, Analytics &amp; ML</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Pune, Maharashtra, India</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              View Projects
+            </a>
+            
+            <a href="assets/resume.pdf" class="btn btn-secondary" download="Chandan_Vishnav_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Contact Me
+            </a>
+
+            <a href="https://github.com/chandanvaishnav" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/chandan-vaishnav-591a2b301/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo Area with Real Photo -->
+        <div class="hero-photo-wrapper">
+          <div class="photo-frame">
+            <img 
+              id="profile-img" 
+              src="assets/profile.jpg" 
+              alt="Chandan Vishnav - Professional Headshot" 
+              class="profile-img"
+              onerror="this.onerror=null; this.src='assets/avatar-placeholder.svg';"
+            >
+            <div class="photo-badge">
+              <span class="badge-dot"></span> Open to Work
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+         ========================================== -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Background, core interests, and what I bring to an engineering team</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <p class="about-lead">
+              I am an MCA student at P.E.S.'s Modern College of Engineering, Pune (Savitribai Phule Pune University), passionate about building practical software and data-driven solutions.
+            </p>
+            <p>
+              My core academic and project interests center around <strong>Python</strong>, <strong>Data Analytics</strong>, <strong>Machine Learning</strong>, <strong>Software Development</strong>, and <strong>practical technology solutions</strong>. Through coursework and hands-on projects, I have built systems ranging from machine-learning URL security classifiers and interactive SQL analysis assistants to urban traffic analysis pipelines and computer-adaptive examination frameworks.
+            </p>
+            <p>
+              I focus on structured problem solving, writing clean and maintainable code, and turning complex datasets into reliable insights. As a fresher, I am actively seeking an entry-level opportunity where I can contribute my programming and analytical foundation, learn from experienced engineering teams, and grow as a technology professional.
+            </p>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">💻</div>
+              <div class="highlight-body">
+                <h3>Software &amp; Python</h3>
+                <p>Developing clean, modular code with Python, C, C++, Java, Flask, and Streamlit.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">📊</div>
+              <div class="highlight-body">
+                <h3>Data Analytics</h3>
+                <p>Exploratory data analysis, querying, and reporting using SQL, Pandas, NumPy, Power BI, and Excel.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">🧠</div>
+              <div class="highlight-body">
+                <h3>Machine Learning</h3>
+                <p>Building predictive models with Scikit-learn, covering Regression, Classification, and Clustering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION
+         ========================================== -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies, frameworks, and tools I have worked with and learned through hands-on coursework and projects</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag skill-featured">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+            </div>
+          </div>
+
+          <!-- 2. Data & Database -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="category-title">Data &amp; Database</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag skill-featured">SQL</span>
+              <span class="skill-tag">Oracle</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- 3. Data Analytics -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3 class="category-title">Data Analytics</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag skill-featured">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Excel</span>
+            </div>
+          </div>
+
+          <!-- 4. Machine Learning -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3 class="category-title">Machine Learning</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag skill-featured">Scikit-learn</span>
+              <span class="skill-tag">Regression</span>
+              <span class="skill-tag">Classification</span>
+              <span class="skill-tag">Clustering</span>
+            </div>
+          </div>
+
+          <!-- 5. Web -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3 class="category-title">Web</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag skill-featured">Flask</span>
+              <span class="skill-tag">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- 6. Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <h3 class="category-title">Tools</h3>
+            </div>
+            <div class="tags-list">
+              <span class="skill-tag skill-featured">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note to Recruiters -->
+        <p class="skills-disclaimer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          Skills represent technologies and frameworks utilized in academic curriculum, individual projects, and technical laboratory assignments.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world systems, machine-learning models, and analytical tools built with Python and modern data stacks</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 1: PhishGuard -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/projects/phishguard.svg" alt="PhishGuard Security Analysis Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-category-badge">Security &amp; ML</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PhishGuard – Phishing Website Detection using Machine Learning</h3>
+              <p class="project-desc">
+                A web-based phishing website detection system that analyzes URLs using multi-layer security heuristics and machine-learning classification techniques to identify potentially malicious websites in real time.
+              </p>
+              
+              <!-- Key Features List -->
+              <div class="project-features">
+                <span class="features-label">Key Features:</span>
+                <ul class="feature-bullets">
+                  <li>URL validation, structure inspection &amp; tokenization</li>
+                  <li>DNS validation &amp; SSL/TLS certificate security checking</li>
+                  <li>Machine-learning classification with probabilistic risk scoring</li>
+                  <li>Responsive web-based interface for instant URL screening</li>
+                </ul>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+
+              <!-- Project Action Links -->
+              <div class="project-actions">
+                <a href="https://github.com/chandanvaishnav/phishing-url-risk-detector" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: DataDoctor AI -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/projects/datadoctor.svg" alt="DataDoctor AI SQL Assistant Preview" class="project-img" loading="lazy">
+              <span class="project-category-badge">Data &amp; SQL Assistant</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">DataDoctor AI – Dataset Analysis &amp; SQL Assistant</h3>
+              <p class="project-desc">
+                An interactive data analysis application that allows users to upload raw tabular datasets, inspect statistical distributions, and execute intuitive SQL-style queries without manual database setup.
+              </p>
+              
+              <div class="project-features">
+                <span class="features-label">Key Features:</span>
+                <ul class="feature-bullets">
+                  <li>Automated dataset ingestion, column type inferencing &amp; summary stats</li>
+                  <li>SQL query execution engine powered by SQLAlchemy &amp; Pandas</li>
+                  <li>Session-based conversation &amp; analytical query history</li>
+                  <li>Interactive tabular results with exportable views</li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">SQLAlchemy</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/chandanvaishnav/DataDoctor-AI" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Smart Attendance Management System -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/projects/attendance.svg" alt="Smart Attendance Management System Preview" class="project-img" loading="lazy">
+              <span class="project-category-badge">Analytics &amp; Machine Learning</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart Attendance Management System</h3>
+              <p class="project-desc">
+                A data-driven attendance management and analytics system designed to track, aggregate, and analyze high-volume attendance logs while detecting patterns of student or employee absenteeism.
+              </p>
+              
+              <div class="project-features">
+                <span class="features-label">Key Features:</span>
+                <ul class="feature-bullets">
+                  <li>Structured attendance records management &amp; status tracking</li>
+                  <li>Exploratory data analysis &amp; attendance percentage trends</li>
+                  <li>Machine learning model to flag students at academic risk</li>
+                  <li>Interactive visual dashboard built with Streamlit</li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Machine Learning</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://smart-attendance-management-system.streamlit.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: TrafficSense -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/projects/trafficsense.svg" alt="TrafficSense Smart Traffic Analysis Preview" class="project-img" loading="lazy">
+              <span class="project-category-badge">Data Engineering &amp; Flask</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TrafficSense – Smart Traffic Analysis System</h3>
+              <p class="project-desc">
+                A traffic data analysis system that processes multi-point urban traffic sensor logs, performs exploratory data analytics, and provides predictive congestion metrics using Python, Flask, and MongoDB.
+              </p>
+              
+              <div class="project-features">
+                <span class="features-label">Key Features:</span>
+                <ul class="feature-bullets">
+                  <li>Traffic sensor pipeline cleaning, normalization &amp; transformation</li>
+                  <li>NoSQL database storage and querying with MongoDB</li>
+                  <li>Hourly congestion trend visualizer and speed estimation</li>
+                  <li>Flask microservices backend serving analytical endpoints</li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">Machine Learning</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://trafficsense-traffic-analytics-dashboard.streamlit.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Adaptive Examination Framework -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/projects/adaptive-exam.svg" alt="Adaptive Examination Framework Preview" class="project-img" loading="lazy">
+              <span class="project-category-badge">Research Project</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Adaptive Examination Framework</h3>
+              <p class="project-subtitle">
+                An Intelligent Web-Based Adaptive Examination Framework with Inline Cognitive Stress Detection Using Native JVM Machine Learning (NEP-Aligned).
+              </p>
+              <p class="project-desc">
+                An NEP-aligned intelligent web-based adaptive testing framework engineered on pure native JVM architecture with Spring Boot 3.x. Evaluates examinees dynamically using Item Response Theory (IRT 2PL) while conducting inline cognitive stress detection via non-invasive client-side telemetry (keystroke rhythm, hesitation pauses, response latencies) without requiring cameras or microphones (Target: sub-30ms inference latency).
+              </p>
+              
+              <div class="project-features">
+                <span class="features-label">Key Technical Highlights:</span>
+                <ul class="feature-bullets">
+                  <li>Pure JVM &amp; Spring Boot 3.x backend with native Java ML (Smile / Oracle Tribuo) running in-memory</li>
+                  <li>Adaptive Testing Engine: Item Response Theory (IRT 2PL) for real-time question difficulty recalibration</li>
+                  <li>Behavioral Telemetry: Client-side dynamics (key-hold time, flight time, cursor hover, option toggling, hesitation)</li>
+                  <li>Non-Invasive Biometrics: Zero camera and zero microphone requirement (Target: sub-30ms inference latency)</li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-pill">Java JDK 17/21</span>
+                <span class="tech-pill">Spring Boot 3.x</span>
+                <span class="tech-pill">Smile / Oracle Tribuo</span>
+                <span class="tech-pill">PostgreSQL / MySQL</span>
+                <span class="tech-pill">Computer-Adaptive Testing</span>
+                <span class="tech-pill">Behavioral Telemetry</span>
+                <span class="tech-pill">Chart.js</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section id="education" class="education-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic qualifications and foundational computer applications coursework</p>
+        </div>
+
+        <div class="education-list">
+          <!-- Degree 1: MCA -->
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">🎓</div>
+              <div class="edu-meta">
+                <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                <p class="edu-institution">P.E.S.'s Modern College of Engineering, Pune</p>
+                <p class="edu-university">Savitribai Phule Pune University (SPPU)</p>
+              </div>
+              <div class="edu-status-tag">Pursuing / Final Year</div>
+            </div>
+
+            <div class="coursework-section">
+              <h4 class="coursework-title">Key Relevant Coursework:</h4>
+              <div class="coursework-tags">
+                <span class="course-chip">Data Structures &amp; Algorithms</span>
+                <span class="course-chip">Database Management Systems (DBMS)</span>
+                <span class="course-chip">Machine Learning</span>
+                <span class="course-chip">Big Data Analytics</span>
+                <span class="course-chip">Software Development</span>
+                <span class="course-chip">Cybersecurity</span>
+                <span class="course-chip">Digital Forensics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Degree 2: BBACA -->
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">🎓</div>
+              <div class="edu-meta">
+                <h3 class="edu-degree">Bachelor of Business Administration in Computer Applications (BBACA)</h3>
+                <p class="edu-institution">K. K. Wagh Arts, Commerce, Science &amp; Computer Science College, Nashik</p>
+                <p class="edu-university">Savitribai Phule Pune University (SPPU)</p>
+              </div>
+              <div class="edu-status-group">
+                <div class="edu-status-tag edu-status-completed">Graduated: 2025</div>
+                <div class="edu-grade">CGPA: <span class="grade-highlight">7.404</span></div>
+              </div>
+            </div>
+
+            <div class="coursework-section">
+              <h4 class="coursework-title">Key Relevant Coursework:</h4>
+              <div class="coursework-tags">
+                <span class="course-chip">Programming in C &amp; C++</span>
+                <span class="course-chip">Data Structures</span>
+                <span class="course-chip">Core Java &amp; Advanced Java</span>
+                <span class="course-chip">Database Management (SQL/RDBMS)</span>
+                <span class="course-chip">Web Technology (HTML, CSS, JS)</span>
+                <span class="course-chip">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualification 3: HSC -->
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">🎓</div>
+              <div class="edu-meta">
+                <h3 class="edu-degree">HSC (Higher Secondary Certificate)</h3>
+                <p class="edu-institution">Loknete Vyankatrao Hiray Arts, Science and Commerce College, Panchavati, Nashik</p>
+              </div>
+              <div class="edu-status-group">
+                <div class="edu-status-tag edu-status-completed">Passed: 2022</div>
+                <div class="edu-grade">Percentage: <span class="grade-highlight">65%</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualification 4: SSC -->
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">🎓</div>
+              <div class="edu-meta">
+                <h3 class="edu-degree">SSC (Secondary School Certificate)</h3>
+                <p class="edu-institution">Shreeram Vidyalaya, Panchavati, Nashik</p>
+              </div>
+              <div class="edu-status-group">
+                <div class="edu-status-tag edu-status-completed">Passed: 2020</div>
+                <div class="edu-grade">Percentage: <span class="grade-highlight">84%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS SECTION
+         ========================================== -->
+    <section id="certifications" class="certifications-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Professional credentials, online courses, and technical verifications</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrapper">📜</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Siemens Data Science Master Virtual Internship</h3>
+              <p class="cert-org">AICTE–EduSkills, Supported by Siemens</p>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/siemens-data-science-master.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrapper">📜</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Foundations: Data, Data, Everywhere</h3>
+              <p class="cert-org">Google / Coursera</p>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/foundations-data-data-everywhere.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrapper">📜</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Machine Learning Professional Certification</h3>
+              <p class="cert-org">RapidMiner / Altair</p>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/machine-learning-professional-certification.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrapper">📜</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Data Engineering Professional Certification</h3>
+              <p class="cert-org">RapidMiner / Altair</p>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/data-engineering-professional-certification.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrapper">📜</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Data Engineering Master Certification</h3>
+              <p class="cert-org">RapidMiner / Altair</p>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/data-engineering-master-certification.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ACHIEVEMENTS / EXPERIENCE SECTION
+         ========================================== -->
+    <section id="achievements" class="achievements-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience &amp; Achievements</h2>
+          <p class="section-subtitle">Internships, hackathons, academic milestones, and technical workshops</p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achieve-badge">🏆</div>
+            <div class="achieve-content">
+              <h3 class="achieve-title">Hack Devengers 2.0</h3>
+              <p class="achieve-org">National-Level Hackathon &bull; <span class="achieve-date">Certificate of Participation</span></p>
+              <p class="achieve-desc">
+                Participated in the Hack Devengers 2.0 national hackathon, developing collaborative technology solutions and rapid software implementations under intensive competition constraints.
+              </p>
+              <div class="achieve-action" style="margin-top: 12px;">
+                <a href="assets/certificates/hack-devengers-participation.pdf" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                  View Certificate
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GITHUB / CODING SECTION
+         ========================================== -->
+    <section id="github-cta" class="github-section section">
+      <div class="container">
+        <div class="github-card">
+          <div class="github-card-content">
+            <div class="github-icon-large">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="github-card-text">
+              <h3 class="github-title">GitHub Profile</h3>
+              <p class="github-subtitle">
+                Explore my repositories, projects, commit activity and technical work.
+              </p>
+            </div>
+          </div>
+          <div class="github-card-action">
+            <a href="https://github.com/chandanvaishnav" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              View GitHub
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         RESUME DEDICATED SECTION
+         ========================================== -->
+    <section id="resume" class="resume-section section">
+      <div class="container">
+        <div class="resume-cta-box">
+          <div class="resume-cta-content">
+            <div class="resume-icon-badge">📄</div>
+            <h2 class="resume-heading">Interested in my profile?</h2>
+            <p class="resume-text">
+              Download my resume to learn more about my education, skills, projects and experience.
+            </p>
+          </div>
+          <div class="resume-cta-button">
+            <a href="assets/resume.pdf" class="btn btn-primary btn-lg" download="Chandan_Vishnav_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+            <span class="resume-format-hint">PDF format &bull; Clean 1-page layout</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">I am actively interviewing for full-time entry-level engineering and analytics roles</p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Information Card Grid -->
+          <div class="contact-grid">
+            
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:chandanvaishnav0988@gmail.com" class="contact-value" id="email-value">chandanvaishnav0988@gmail.com</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="mailto:chandanvaishnav0988@gmail.com" class="btn btn-xs btn-outline">
+                  Send Email
+                </a>
+                <button class="btn btn-xs btn-subtle" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <a href="tel:8010397815" class="contact-value" id="phone-value">8010397815</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="tel:8010397815" class="btn btn-xs btn-outline">
+                  Call
+                </a>
+                <button class="btn btn-xs btn-subtle" id="copy-phone-btn" title="Copy phone number" aria-label="Copy phone number to clipboard">
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/chandan-vaishnav-591a2b301/" class="contact-value" target="_blank" rel="noopener noreferrer">chandan-vaishnav-591a2b301</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="https://www.linkedin.com/in/chandan-vaishnav-591a2b301/" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                  Connect
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/chandanvaishnav" class="contact-value" target="_blank" rel="noopener noreferrer">github.com/chandanvaishnav</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="https://github.com/chandanvaishnav" class="btn btn-xs btn-outline" target="_blank" rel="noopener noreferrer">
+                  Repositories
+                </a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Current Location</span>
+                <span class="contact-value">Pune, Maharashtra, India</span>
+              </div>
+              <div class="contact-card-actions">
+                <span class="badge-pill">Open to Relocation</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct mailto callout card -->
+          <div class="direct-contact-cta">
+            <p>Ready to discuss a role or schedule a technical discussion?</p>
+            <a href="mailto:chandanvaishnav0988@gmail.com?subject=Opportunity%20Discussion%20-%20Chandan%20Vishnav" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Send an Email Directly
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-title">Chandan Vishnav</p>
+        <p class="footer-desc">MCA Student &bull; Aspiring Software &amp; Data Professional</p>
+      </div>
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Chandan Vishnav. Built for recruiters.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTraffic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bgTraffic)" rx="12"/>
+
+  <!-- TrafficSense Dashboard Mockup -->
+  <rect x="50" y="45" width="500" height="250" rx="8" fill="#1e1e38" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Header -->
+  <g transform="translate(75, 72)">
+    <circle cx="8" cy="8" r="6" fill="#ef4444"/>
+    <circle cx="26" cy="8" r="6" fill="#f59e0b"/>
+    <circle cx="44" cy="8" r="6" fill="#10b981"/>
+    <text x="65" y="12" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TrafficSense – Smart Urban Traffic Analytics</text>
+    <text x="65" y="27" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Flask API • MongoDB Sensor Pipeline • Predictive Flow</text>
+  </g>
+
+  <!-- Flow Visualizer / Bar Chart -->
+  <g transform="translate(75, 120)">
+    <!-- Corridor 1 -->
+    <text x="0" y="14" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Corridor A (Main Arterial)</text>
+    <rect x="160" y="4" width="220" height="13" rx="6.5" fill="#312e81"/>
+    <rect x="160" y="4" width="180" height="13" rx="6.5" fill="#ef4444"/>
+    <text x="390" y="15" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">82% Congestion</text>
+
+    <!-- Corridor 2 -->
+    <text x="0" y="46" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Corridor B (Expressway)</text>
+    <rect x="160" y="36" width="220" height="13" rx="6.5" fill="#312e81"/>
+    <rect x="160" y="36" width="95" height="13" rx="6.5" fill="#10b981"/>
+    <text x="390" y="47" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">38% Free Flow</text>
+
+    <!-- Corridor 3 -->
+    <text x="0" y="78" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Corridor C (Downtown Grid)</text>
+    <rect x="160" y="68" width="220" height="13" rx="6.5" fill="#312e81"/>
+    <rect x="160" y="68" width="140" height="13" rx="6.5" fill="#f59e0b"/>
+    <text x="390" y="79" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">59% Moderate</text>
+  </g>
+
+  <!-- Database & ML Stats -->
+  <g transform="translate(75, 230)">
+    <rect x="0" y="0" width="215" height="42" rx="6" fill="#0f172a" stroke="#312e81" stroke-width="1"/>
+    <text x="12" y="16" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">MONGODB REPOSITORY</text>
+    <text x="12" y="32" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Time-series GeoJSON Data</text>
+
+    <rect x="230" y="0" width="215" height="42" rx="6" fill="#0f172a" stroke="#312e81" stroke-width="1"/>
+    <text x="242" y="16" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">ML CONGESTION FORECAST</text>
+    <text x="242" y="32" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Trained on Hourly Peak Intervals</text>
+  </g>
+</svg>

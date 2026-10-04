@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAttendance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bgAttendance)" rx="12"/>
+
+  <!-- Analytics Container -->
+  <rect x="50" y="45" width="500" height="250" rx="8" fill="#162238" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.4"/>
+  
+  <!-- Header -->
+  <text x="75" y="75" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">Attendance Intelligence &amp; Prediction Dashboard</text>
+  <text x="75" y="93" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Streamlit Analytics Engine • ML Irregularity Detection</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(75, 110)">
+    <!-- Metric 1 -->
+    <rect x="0" y="0" width="135" height="52" rx="6" fill="#0d1726" stroke="#1e293b" stroke-width="1"/>
+    <text x="12" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5">Avg Attendance</text>
+    <text x="12" y="42" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">89.4%</text>
+
+    <!-- Metric 2 -->
+    <rect x="150" y="0" width="135" height="52" rx="6" fill="#0d1726" stroke="#1e293b" stroke-width="1"/>
+    <text x="162" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5">At-Risk Students</text>
+    <text x="162" y="42" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">14 Flagged</text>
+
+    <!-- Metric 3 -->
+    <rect x="300" y="0" width="145" height="52" rx="6" fill="#0d1726" stroke="#1e293b" stroke-width="1"/>
+    <text x="312" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5">Records Processed</text>
+    <text x="312" y="42" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">28,500+</text>
+  </g>
+
+  <!-- Trend Graph Area -->
+  <g transform="translate(75, 180)">
+    <rect x="0" y="0" width="445" height="95" rx="6" fill="#0b1320"/>
+    
+    <!-- Grid Lines -->
+    <line x1="20" y1="20" x2="425" y2="20" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="20" y1="50" x2="425" y2="50" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="20" y1="80" x2="425" y2="80" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Area Chart -->
+    <polygon points="30,75 75,58 130,62 185,42 240,48 295,30 350,34 415,22 415,80 30,80" fill="url(#chartGrad)"/>
+    <polyline points="30,75 75,58 130,62 185,42 240,48 295,30 350,34 415,22" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Key Points -->
+    <circle cx="295" cy="30" r="3.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="415" cy="22" r="3.5" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="360" y="16" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">Peak 94.2%</text>
+  </g>
+</svg>
